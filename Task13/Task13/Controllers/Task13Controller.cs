@@ -24,7 +24,7 @@ namespace Task13.Controllers
             }
             return Ok(orders);
         }
-        [Route("clients/{id?}/orders")]
+        [Route("clients/{id}/orders")]
         [HttpPost]
         public IActionResult AddOrders(AddOrderRequest request)
         {
